@@ -1,0 +1,621 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    line-height: 1.6;
+}  
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+/*********СТИЛИ ДЛЯ КНОПКИ НАЗАД ***********/
+
+/*---------Блок container---------*/ 
+.button_return {
+    height: 50px;
+    margin-top: 30px; 
+    text-align: center;
+    
+    
+}
+.button__home {
+    font-size: 16px;
+    color: #000; 
+    text-decoration: none;
+    border:1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:5px;
+    text-align: center;    
+}
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*------БЛОК header__iner----------------*/
+.header__iner {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:5px;
+}
+.nav {
+    font-size: 16px;
+    line-height: 63px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+.burger-menu {
+    display: none;  
+}
+.nav__link {
+    color: #000000;
+    text-decoration: none;
+    padding-right: 30px;
+}
+.nav__link:hover {
+    color: #ff0826;
+}
+.nav__link:last-child {
+    padding-right: 0;
+}
+.social {
+    display: flex;
+    justify-content: space-between;   
+}
+/*-----------БЛОК Section--Slider---------------------*/
+
+.slider__photo {
+    margin-top: 40px;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+}
+.btn__right {
+     top: 50%  ;
+    right: 10px ;         
+}
+.btn__left {
+    top: 50%;
+    left: 10px;
+    
+}
+ 
+/*-------БЛОК Section--Slider ЗАКРЫТ-----------------*/
+
+
+/*--------Блок портфолио -ы-------------*/
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.portfolio__zoom {
+   padding: 10px;
+}
+.section__portfolio {
+    width: 100%
+    max-width:720px;
+}
+.portfolio h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 27px 0 45px 0 ;
+
+    color: #010000;
+    font-size: 30px;
+    font-weight: 500;
+/*    line-height: 63px;*/
+    letter-spacing: 3.6px;
+}
+
+.portfolio__photo {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio__item {
+    margin-bottom:20px;
+    box-shadow: 2px 3px 7px 2px  #c1bfbf;
+}
+.portfolio__big {
+    text-align: center;
+}
+.portfolio__zoom {
+   max-width:100%;
+  text-align: center;
+}
+/*------Блок портфолио закрыт------------------------------------*/
+
+
+/*--------Блок услуги--------------------------------*/
+.services__subtitle h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px 0 45px 0;
+
+    color: #010000;
+    font-size: 30px;
+    font-weight: 500;
+/*    line-height: 63px;*/
+    letter-spacing: 3.6px;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.services__item {
+    width: 320px;
+/*    padding: 25px 0 35px  35px;*/
+    padding-bottom: 30px;
+    text-align: center;
+}
+.services__title {
+    font-size: 14px;
+    color: #807f7f;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.services__icon {
+    margin: 22px 22px;
+}
+.services__text {
+    font-size: 14px;
+    color: #807f7f;
+    text-transform: uppercase;
+}
+/*----------Блок услуги закрыт \-------------*/
+
+
+/*-----------Блок обо мне--------------------------------*/
+
+.about__me--title h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px 0 45px 0;
+    color: #010000;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3.6px;
+}
+.about__me--item {
+    position: relative;
+}
+.about__me--img {
+    position: absolute;
+    padding-left: 50px;  
+}
+.about__me--text {
+    width: 700px;
+    margin-left: 400px;
+    padding-top: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    color: #807f7f;  
+}
+/*----------Блок обо мне закрыт-------------------------*/
+
+
+/*-------------БЛОК reviwes----------------*/
+.reviews {
+    position: relative;
+}
+.reviews:focus {
+    outline: 0;
+}
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    border: 0;
+    background: none;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
+.reviews__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 120px 0 45px 0 ;
+    color: #010000;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3.6px; 
+}
+.reviwes__photo {
+    position: absolute;
+    margin-left: 900px;
+}
+.reviews__text {
+    width: 700px;
+    height: 100px;
+    margin-left: 100px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #807f7f; 
+    text-align: center;   
+}
+.reviews__author {
+    margin-left: 930px;
+    margin-top: 60px;
+    font-style: italic;
+    font-size: 12px;
+}
+/*  -----------БЛОК reviews закрыт----------------*/
+
+
+
+/*-------------БЛОК contact открыт-------------------*/
+.footer {
+    background-color: #dbdbdb;
+    height: auto;
+}
+.contact__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px 0 45px 0 ;
+    padding-top:10px;
+    color: #010000;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3.6px;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact__social__title {
+    font-size: 15px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #4f4b4b;
+    letter-spacing: 1.6px;  
+    margin-bottom: 18px;
+    
+}
+
+.contact__socail__network {    
+}
+
+.contact__icon {
+    padding-right: 10px;
+}
+.contact__phone {
+    display: flex;
+    align-items: center;
+}
+.phone__number {
+    font-size: 26px;
+}
+.connection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: inline-block;
+    border-width: 2px;
+    border-color: #e71414;
+    border-style: solid;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #e71414;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 13px;
+
+    margin-top: 40px;
+    
+    
+    transition: 0.2s ease-out;
+}
+.button:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: #e71414;
+}
+.info  {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4f4b4b;
+    font-size: 10px;
+    margin-top: -20px;    
+}
+.design {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+}
+.korochkin {
+    text-decoration: none;
+    color: #4f4b4b;
+}
+
+/*************************************************
+MEDIA 
+***************************************************/
+
+@media (max-width: 1170px) {
+    
+    .services {
+        width: 100%;
+        justify-content: center;
+    }
+    .services__item {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .about__me--item {
+       display: flex;
+       justify-content: center;
+   }
+
+   .about__me--text {
+    margin-left: 0;
+    padding-top: 270px;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+    .about__me--img {
+        padding-left: 0;
+    }   
+    .reviews {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        
+    }     
+    .reviwes__photo {
+   display: none;
+    }
+    .reviews__text {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 14px;
+    
+    }
+
+    .reviews__author {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 10px;
+    }
+    .reviews__title {
+    margin: 30px 0 45px 0;
+    }
+}
+@media (max-width: 880px) {  /*для бургер меню*/
+    .nav {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .burger-menu__button {
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        z-index: 30;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #2a2a2a;
+        transition: 0.5s; 
+    }
+    .burger-menu__lines, 
+    .burger-menu__lines::before,
+    .burger-menu__lines::after {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+    }
+    .burger-menu__lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .burger-menu__lines::before {
+        content: "";
+        top: -6px;
+    }
+    .burger-menu__lines::after {
+        content: "";
+        top: 6px;
+    }
+    .burger-menu__active .burger-menu__button,
+    .burger-menu__active .burger-menu__lines {
+        background-color: transparent;   
+    }
+    .burger-menu__active .burger-menu__lines::before {
+       top: 0;  
+       transform: rotate(45deg);
+    }
+    .burger-menu__active .burger-menu__lines::after {
+        top: 0;  
+        transform: rotate(-45deg);
+    }
+    .burger-menu__nav {
+        top: 0;
+        padding-top: 40px;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background-color: #2a2a2a;
+        opacity: 0.8;s
+        overflow-y: auto;
+        right: -105%;      
+        transition: 0.5s; 
+    }
+    .burger-menu__active .burger-menu__nav {
+        right: 0;
+    }
+    .burger-menu__link {
+        padding: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;    
+    }
+    .burger-menu__overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        z-index: 10;
+
+    }
+    .burger-menu__active .burger-menu__overlay {
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    .services {
+        justify-content: center;
+    }
+
+    .reviews {
+        height: 600px;
+        display: flex;
+        justify-content: center;    
+    } 
+
+    .reviwes__photo {
+       display: none;
+     
+    }
+    .reviews__text {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 12px;
+    
+    }
+
+    .reviews__author {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 10px;
+    }
+    .reviews__title {
+    margin: 30px 0 45px 0;
+    }
+
+    .contact__content {
+    flex-direction: column;
+
+    }
+    .contact__logo {
+    margin-top: -10px;
+    padding-bottom: 32px;
+    }
+
+}
+@media (max-width: 470px) {
+    
+    .button_return {
+        height: 50px;
+        margin-top: 30px; 
+        text-align: center;
+}
+    .button__home {
+        font-size: 18px;
+        color: #000; 
+        text-decoration: none;
+        border:1px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top:5px;
+        text-align: center;    
+}
+    .services { 
+        justify-content: center;
+    }
+    .about__me--text {
+        font-size: 12px;
+    }
+    .reviews {
+        height: 600px;
+        display: flex;
+        justify-content: center;     
+    } 
+
+    .reviwes__photo {
+       display: none;    
+    }
+    .reviews__text {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 10px;   
+    }
+    .reviews__author {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 10px;
+    }
+    .reviews__title {
+    margin: 30px 0 45px 0;
+    }
+
+
+}
